@@ -73,7 +73,7 @@ class MainWindow(QMainWindow, ui):
         device_type = self.combo_device_type.currentText()
         
             
-        if cisco.connection_test(self.hostname, self.username, self.password) == True:
+        if cisco.connection_test_ssh(self.hostname, self.username, self.password) == True:
             
              # disable username/password fields
             self.edit_username.setEnabled(False)
